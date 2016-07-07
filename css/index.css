@@ -1,0 +1,492 @@
+	body{
+		font-family: "微软雅黑"
+	}
+	body,h1,h2,h3,h4,h5,h6,p,ul,li,dl,dt,dd,input {
+	margin:0;
+	padding:0;
+	font-family: Arial,"微软雅黑";
+	list-style:none;
+}
+	a{
+		text-decoration: none;
+	}
+	img{
+		border: none;
+	}
+	.player{
+		width: 400px;
+		height: auto;
+		margin: -40px auto;
+		background: #333;
+	}
+	.player .player-top{
+		height: 60px;
+		background: #000;
+		position: relative;
+	}
+	.player .player-top span{
+		width: 15px;
+		height: 8px;
+		background: url(../images/download.png)no-repeat -504px -28px;
+        position: absolute;
+        left: 37px;
+        top: 60px;
+        z-index: 200;
+	}
+	.player .player-top .play-delete{
+		width: 50px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 12px;
+        color: #aaa;
+        position: absolute;
+        right: 40px;
+        top: 0px;
+        cursor: pointer;
+	}
+	.player .player-top .play-jiaotou{
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		background: url(../images/download.png)no-repeat -269px -117px;
+	}
+	.player .player-top .play-jiaotou:hover{
+		background-position: -269px -97px;
+	}
+	.player .player-top .play-list{
+		width: 90px;
+		background: #222;
+		text-align: center;
+		line-height: 60px;
+		font-size: 16px;
+		color: #fff;
+		cursor: pointer;
+	}
+	.player .player-body{
+		height: 400px;
+		background: #333;
+	}
+	.player-body .song{
+		display: block;
+		width: 400px;
+		height: 30px;
+		color: #aaa;
+		position: relative;
+		margin-top: 5px;
+	}
+	.player-body .song.green{
+		color: #00ff6c;
+	}
+	.player-body .song:hover .opration{
+		background: #000;
+		color: #fff;
+		cursor: pointer;
+		display: block;
+	}
+	.player-body .song:hover{
+		background: #000;
+		color: #fff;
+		cursor: pointer;
+		display: block;
+	}
+	.player-body .song:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.player-body .song span{
+		font-size: 12px;
+		display: block;
+		line-height: 30px;
+	}
+	.player-body .song .ygc{
+		width: 150px;
+        float: left;
+		display: block;
+		padding-left: 10px;
+	}
+	.player-body .song .author{
+		width: 160px;
+        float: left;
+		display: block;
+	}
+	.player-body .song .time{
+		width: 80px;
+		display: block;
+        float: left;
+	}
+	.player-body .song .opration{
+		width: 90px;
+		height: 10px;
+		background: #000;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 10px;
+		display: none;
+	}
+	.player-body .song .opration .like{
+		width: 12px;
+		height: 11px;
+		float: left;
+		margin-right: 10px;
+		background: url(../images/download.png)no-repeat -2px -129px;
+	}
+	.player-body .song .opration .like:hover{
+		width: 12px;
+		height: 11px;
+		background: url(../images/download.png)no-repeat -2px -147px;
+	}
+	.player-body .song .opration .share{
+		width: 12px;
+		height: 11px;
+		float: left;
+		margin-right: 10px;
+		background: url(../images/download.png)no-repeat -19px -129px;
+	}
+	.player-body .song .opration .share:hover{
+		width: 12px;
+		height: 11px;
+		background: url(../images/download.png)no-repeat -19px -147px;
+	}
+	.player-body .song .opration .shoucang{
+		width: 12px;
+		height: 11px;
+		float: left;
+		margin-right: 10px;
+		background: url(../images/download.png)no-repeat -66px -129px;
+	}
+	.player-body .song .opration .shoucang:hover{
+		width: 12px;
+		height: 11px;
+		background: url(../images/download.png)no-repeat -66px -147px;
+	}
+	.player-body .song .opration .delete{
+		width: 12px;
+		height: 11px;
+		float: left;
+		margin-right: 10px;
+		background: url(../images/download.png)no-repeat -50px -129px;
+	}
+	.player-body .song .opration .delete:hover{
+		width: 12px;
+		height: 11px;
+		background: url(../images/download.png)no-repeat -50px -147px;
+	}
+
+	.player .player-bottom{
+        height: 110px;
+        background: #000;
+        position: relative;
+	}
+    .player-bottom .play{
+    	height: 25px;
+    	line-height: 25px;
+    }
+    .player-bottom .play:after{
+    	content: "";
+    	display: block;
+    	clear: both;
+    }
+    .player-bottom .play .psc{
+    	font-size: 12px;
+    	position: absolute;
+    	width: 25%;
+    	height: 25px;
+    	left: 90px;
+      top: 0;
+      /*padding-left: 15px;*/
+      color: white;
+    }
+    .player-bottom .play .img{
+    	font-size: 12px;
+    	position: absolute;
+    	width: 25%;
+    	height: 25px;
+    	margin-top: 5px;
+    	left: 51%;
+        top: 0;
+    	cursor: pointer;
+        float: left;
+        background: url(../images/download.png)no-repeat -453px -55px;
+    }
+    .player-bottom .play .lsd{
+    	font-size: 12px;
+    	position: absolute;
+    	width: 30%;
+    	height: 25px;
+    	left: 70%;
+        top: 0;
+        float: left;
+    }
+    .player-bottom .play .lsd .caidan{
+    	width: 23px;
+    	height: 25px;
+    	display: block;
+    	float: left;
+    	margin-left: 25px;
+    	margin-right: 10px;
+    	background: url(../images/download.png)no-repeat -222px -97px;
+    	cursor: pointer;
+    }
+    .player-bottom .play .lsd .caidan:hover{
+    	background-position: -154px -97px;
+    }
+    .player-bottom .play .lsd .sum{
+    	width: 23px;
+    	height: 25px;
+    	display: block;
+    	float: left;
+    	background: url(../images/download.png)no-repeat -245px -97px;
+    	cursor: pointer;
+      text-align:center;
+      line-height: 25px;
+    }
+    .player-bottom .play .lsd .sum.empty{
+    	background-position: -177px -97px;
+    }
+    .player-bottom .play .lsd .ci{
+    	width: 14px;
+    	height: 14px;
+    	display: block;
+    	float: left;
+    	margin-left: 15px;
+    	margin-top: 6px;
+    	cursor: pointer;
+    	background: url(../images/download.png)no-repeat -452px -1px;
+    }
+    .player-bottom .play .lsd .ci:hover{
+    	background-position: -475px -1px;
+    }
+    .player-bottom .play .icon{
+    	width: 90px;
+    	height: 80px;
+    	position: absolute;
+    	left: 0px;
+    	top: 0;
+    	overflow: hidden;
+    }
+    .player-bottom .second{
+    	width: 80px;
+    	height: 55px;
+    	position: absolute;
+    	left: 90px;
+    	top: 35px;
+    }
+    .player-bottom .second .dc{
+    	font-size: 10px;
+    	display: block;
+    	color: #aaa;
+    	/*padding-left: 15px;*/
+    }
+    .player-bottom .second .time2{
+    	font-size: 10px;
+    	display: block;
+    	color: #aaa;
+    	/*padding-left: 15px;*/
+    	margin-top: 3px;
+    }
+    .player-bottom .second .icon .icon1{
+    	width: 12px;
+    	height: 11px;
+    	display: block;
+    	margin-top: 5px;
+    	float: left;
+    	/*margin-left: 10px;*/
+        background: url(../images/download.png)no-repeat -2px -129px;
+    }
+    .player-bottom .second .icon .icon1:hover{
+        background: url(../images/download.png)no-repeat -2px -147px;
+    }
+    .player-bottom .second .icon .icon2{
+    	width: 12px;
+    	height: 12px;
+    	display: block;
+    	float: left;
+    	margin-left: 10px;
+    	margin-top: 5px;
+        background: url(../images/download.png)no-repeat -66px -130px;
+    }
+    .player-bottom .second .icon .icon2:hover{
+        background: url(../images/download.png)no-repeat -66px -148px;
+    }
+     .player-bottom .three{
+     	width: 230px;
+     	height: 55px;
+     	position: absolute;
+     	left: 170px;
+     	top: 35px;
+     }
+     .player-bottom .three span{
+     	float: left;
+     }
+     .player-bottom .three .te1{
+     	width: 19px;
+     	height: 16px;
+     	float: left;
+     	margin-top: 20px;
+     	background: url(../images/download.png)no-repeat -77px -6px;
+     }
+     .player-bottom .three .te1:hover{
+     	background-position: -77px -38px;
+     }
+     .player-bottom .three .te2{
+     	width: 24px;
+     	height: 32px;
+     	float: left;
+     	margin-left: 20px;
+     	margin-top: 12px;
+     	background: url(../images/download.png)no-repeat -114px -5px;
+     }
+     .player-bottom .three .te2:hover{
+     	background-position: -114px -47px;
+     }
+     .player-bottom .three .te2.playing{
+     	background: url(../images/download.png)no-repeat -301px -93px;
+     }
+     .player-bottom .three .te2.playing:hover{
+     	background: url(../images/download.png)no-repeat -343px -93px;
+     }
+     .player-bottom .three .te3{
+     	width: 19px;
+     	height: 16px;
+     	float: left;
+  	    margin-left: 20px;
+     	margin-top: 20px;
+     	background: url(../images/download.png)no-repeat -156px -6px;
+     }
+     .player-bottom .three .te3:hover{
+     	background-position: -156px -38px;
+     }
+     .player-bottom .three .te4{
+     	width: 21px;
+     	height: 16px;
+     	float: left;
+     	margin-left: 8px;
+     	margin-top: 20px;
+     	background: url(../images/download.png)no-repeat -227px -6px;
+     }
+     .player-bottom .three .te4:hover{
+     	background-position: -227px -38px;
+     }
+     .player-bottom .three .volume{
+     	width: 97px;
+     	height: 55px;
+     	float: left;
+     	position: relative;
+     }
+      .player-bottom .three .volume .volume-1{
+      	width: 19px;
+      	height: 17px;
+      	position: absolute;
+      	left:0;
+      	top: 0;
+      	margin-top: 20px;
+      	margin-left: 3px;
+      	background:url(../images/download.png)no-repeat -193px -6px;     
+      }
+      .player-bottom .three .volume .volume-1.stop{
+      	background:url(../images/download.png)no-repeat -156px -66px;     
+      }
+      .player-bottom .three .volume .volume-1.stop:hover{
+      	background-position: -193px -66px;
+      }
+      .player-bottom .three .volume .volume-1:hover{
+      	background:url(../images/download.png)no-repeat -193px -38px;
+      }
+      .player-bottom .three .volume .volume-p{
+      	width: 71px;
+      	height: 10px;
+        position: absolute;
+      	left: 24px;
+      	top:25px;
+      }
+      .player-bottom .three .volume .volume-2{
+      	width: 71px;
+      	height: 4px;
+      	position: absolute;
+      	left: 0px;
+      	z-index: 20;
+      	top:2px;
+      	background: url(../images/download.png)no-repeat -291px -15px;
+      }
+      .player-bottom .three .volume .volume-2.moveing{
+      	background: url(../images/download.png)no-repeat -291px -4px;
+      }
+      .player-bottom .three .volume .volume-4{
+      	width: 71px;
+      	height: 4px;
+      	position: absolute;
+      	left: 0px;
+      	top:2px;
+      	background: url(../images/download.png)no-repeat -291px -4px;
+      }
+      .player-bottom .three .volume .volume-3{
+      	width: 6px;
+      	height: 7px;
+      	position: absolute;
+      	left: 67px;
+      	top: 0px;
+      	z-index: 50;
+      	background: url(../images/download.png)no-repeat -366px -2px;
+      }
+      .player-bottom .three .volume .volume-3.moving{
+      	background: url(../images/download.png)no-repeat -366px -18px;
+      }
+     /* .jindutiao{
+      	width: 400px;
+      	height: 3px;
+      	background: green;
+      	position: relative;
+        margin-top: -15px;
+      }
+     .jiant2{
+     	width: 100px;
+     	height: 3px;
+     	position: absolute;
+     	left: 0;
+     	top: 0;
+     	background: red;
+     }
+     .jiant2 .yuan{
+     	width: 5px;
+     	height: 5px;
+     	border-radius: 50%;
+     	position: absolute;
+     	left: 100px;
+     	top: -1px;
+     	background: orange;
+     }*/
+.icon img{
+      width:80px;
+      height:80px;
+     }
+.going{
+  width: 392px;
+  height: 4px;
+  position: relative;
+  bottom:5px;
+  right: 0;
+  background:#aaa;
+  z-index: 100;
+   cursor: pointer;
+   margin:auto;
+}
+.going .going1{
+  width:0px;
+  height: 4px;
+  background: #fff;
+}
+.going .going2{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background:#0bba56;
+  position: absolute;
+  /*left:100px;*/
+  top:-2px;
+  left:-4px;
+  cursor: pointer;
+}
